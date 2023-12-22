@@ -1,0 +1,96 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url(../imagens/imagem-dia.png);
+	background-attachment: fixed;
+	color: #333333;
+	background-size: cover;
+}
+
+body.modo-escuro {
+	background-image: url(../imagens/imagem-noite.png);
+	background-attachment: fixed;
+	color: #f5f5f5;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header {
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(0,0,0,1) 100%);
+	display: flex;
+	width: 100%;
+	top: 0%;
+	z-index: 1;
+	
+}
+
+header .wilson-lateral,
+header .imagem-botao {
+	width: 4rem;
+	transition: 300ms ease-in-out;
+}
+
+header .logo-dst {
+	width: 12rem;
+	transition: 300ms ease-in-out;
+}
+
+header {
+	justify-content: space-between;
+	padding: 25px;
+}
+
+header #trocar-tema {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+header .wilson-lateral:hover,
+		.imagem-botao:hover,
+		.logo-dst:hover {
+	transform: scale(1.10);
+}
+
+main{
+	padding: 25px;
+	display: flex; 
+}
+
+main .personagem{
+	width: 12.5rem;
+}
+
+main .listagem-personagens{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	padding-top: 0px;
+	
+}
+
+main .cartao-personagem{
+	width: 15rem;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	transition: 0.2s ease-in-out ;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	background-color: #5e5b5bad;
+
+}
+
+main .cartao-personagem:hover{
+	transform: scale(1.05);
+}
+
+main .descricao{
+	max-height: 80px;
+	overflow-y: scroll;
+	font-size: 14px;
+	padding-right: 10px;
+	color: white;
+}
